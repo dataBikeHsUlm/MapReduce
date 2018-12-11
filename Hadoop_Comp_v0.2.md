@@ -32,7 +32,8 @@ For the first part of the evaluation, a search for widespread Hadoop distributio
 | <p align="left"> Pivotal HD [www.gopivotal.com](http://www.gopivotal.com) |<p align="left"> Partnered with Hortonworks [14]. Fast SQL on Hadoop. Poprietary Software [15]: <br> Pivotal DataLoader, SS (external file system), Spring Data, Pivotal ADS-HAWQ (parallel SQL query engine), |<p align="left"> Premium |<p align="left"> Offers same services as Hortonworks. |
 | <p align="left"> IBM Open Platform <br>[www.ibm.com](http://www.ibm.com) |<p align="left"> Partnered with Hortonworks [14]. Proprietary tools (IBM Big SQL allows concurrent process of Hive, HBase and Spark and other sources using a single database connection [14]. IBM BigInsights v4.2 provides Text-Analytics module [16] and highly compatible to other IBM products. |<p align="left"> Free for non-commercial purposes, optional enterprise paid support [17] |<p align="left"> Offers same services as Hortonworks. |
     
-<center><b>Table 1:</b> Overview of Hadoop distributions</center>
+<b>Table 1:</b> Overview of Hadoop distributions
+
 
 It is worth to mention that each Hadoop distribution in table 1 comes up with a minimum of services from the apache foundation: YARN, HDFS, Hive, Pig, HBase, Kafka, Storm, Mahout, HCatalog… But they may use a proprietary implementation of them e.g. MapR uses own HDFS instead of Apache HDFS implementation. It is also worth to note that a few cloud providers are offering Hadoop cluster services over their platforms. For instance, Microsoft Azure provides with HDInsight a full manageable Hadoop respectively Spark Cluster [18]. The user could profit from fast provisioning and also from less costs since no on-prem hardware cluster infrastructure is required. Therefore, Hadoop (or better Spark) by Cloud Computing is also a mentionable option for our data science project in the future, although it may be oversized at the moment.
 
@@ -41,7 +42,8 @@ Nevertheless, Intel, ERM/Pivotal and IBM partnered with Hortonworks or Cloudera 
 In addition to the distributions shown in Table 1, there are many other Hadoop distributions such as Altiscale from SAP or Elastic MapReduce from Amazon. Both run only in a cloud environment. The Forrester Wave shows also the three global players Cloudera, HortonWorks and MapR (see figure 1). Since cloud solutions do not play a role for this use case, Microsoft, Google or Amazon will not be considered.
 
  <img src="./imgs/forrester.png" align="center" width=500></img>
- <center><b>Figure 1:</b> Forrester Wave of Hadoop Distributions [5]</center>
+<b>Figure 1:</b> Forrester Wave of Hadoop Distributions [5]
+
 
 As we can see from figure 1 the three mentioned Hadoop distributions are building a cluster and Cloudera even overlaps with MapR slightly. That means, they are providing similar products and enjoy a similar market position. From the Forrester Wave (figure 1) we can derive that MapR seems to have the best offering. However, since we want to use one of them for our analytics project we have to dig a step deeper and make a decision based on well-defined criteria.
 
@@ -71,7 +73,8 @@ Hadoop distributions are rated using selected criteria, with scores ranging from
 | User Support/Community | How fast is the response in the community? |
 | Expertise | Experience with Hadoop (life time of company, …) |
 
-<center><b>Table 2:</b> Overview of Hadoop distributions </center>
+<b>Table 2:</b> Overview of Hadoop distributions
+
 
 The weight scale ranges from 1 (trivial) to 4 (very important), with the focus on our Santander Bicycle project. This means that cloud support, for example, is a crucial criterion in many use cases, but has only little importance for our project which leads to a trivial weight. A percentage weighting is not applied because 20 criteria would result in a fine-granular distribution (which is not good to read at all). Therefore, absolute values are used for the comparison table in the next section.
 
@@ -110,7 +113,7 @@ The weight scale ranges from 1 (trivial) to 4 (very important), with the focus o
 | (good) 4 |
 | (ideal) 5 |
 
-<center><b>Table 3:</b> Weighted Comparison Table of Hadoop Distributions</center>
+<b>Table 3:</b> Weighted Comparison Table of Hadoop Distributions
 
 
 As already mentioned in Section 1, the three major Hadoop distributions are: Cloudera CDH 5.15.0, Hortonworks HDP 3.0.1 and MapR 6.1.0. With regard to the defined comparison criteria, a weighted decision matrix can be mapped. At the same time, this matrix represents the starting point for the decision of a Hadoop distribution. It cannot be denied that a certain degree of subjectivity is included in the evaluation (Table 2). In addition, only free editions are compared. For example, if a feature only exists in the premium version, this feature will be rated 1 (worst) since we don&#39;t want to waste money.
@@ -120,7 +123,8 @@ Table 3 clearly shows that there are almost no significant differences between t
 Another representation of the evaluated Hadoop distributions, a spider chart may be appropriate as it makes it easier to read and to identify outliers or similarities even quicker as with a raw table.
 
 <img src="./imgs/spider_chart.PNG" align="center" width=450></img>
-<center><b>Figure 2:</b> Spider chart of compared Hadoop distributions</center>
+<b>Figure 2:</b> Spider chart of compared Hadoop distributions
+
 
 The KO criteria from table 3 are all satisfied by the selected Hadoop vendors. One criterion that stands out is the license model, which was rated with 1 point for MapR and 2 points for Cloudera. This is due to the fact that the price models of both vendors are not transparent. So Cloudera offers a free community edition but to use the Cloudera Manager (the real strength of Cloudera) you have to pay again. Only Hortonworks offers a complete Open Source package with except the Hortonworks business support is fee required. However, Hortonworks has a very active community as well.
 
@@ -133,7 +137,8 @@ An interesting aspect of the comparison is the performance criterion where MapR 
 For a performance comparison it is good to know how fast they are compute when running in a concurrent mode. For this task MapReduce Jobs like WordCount or DFSIO Read/Write might be helpful. Following figures are extracted from a sophisticated evaluation work by Altoros [19].
 
 <img src="./imgs/benchmarks_mr.PNG" align="center" width=500></img>
-<center><b>Figure 3:</b> Micro benchmarks on DFSIO and WordCount MapReduce Jobs</center>
+<b>Figure 3:</b> Micro benchmarks on DFSIO and WordCount MapReduce Jobs
+
 
 For the performance comparison of figure 3 Hadoop cluster each one with 16 nodes have been established in order to measure computation time. Interesting point is that all 3 Hadoop distributions almost achieve the same overall speed on the famous WordCount MapReduce job. But if we look at the performance per node then there is a small difference between them. This could be due to a certain error rate in the execution of the job. If the same test were repeated, the results would be negligibly different. The DFSIO Read/Write (figure 3) job shows MapR is definitely faster than Hortonworks and Cloudera. The reason for this might be the fact that MapR uses its own HDFS which is according to the vendor seven times faster than the original one from Apache. This is the reason why it gets 5 points in the evaluation matrix (see table 2) and the other ones only 4 points. Hortonworks and Cloudera seems to have the same performance on the DFSIO job because both using Apache HDFS.
 
@@ -155,14 +160,15 @@ First of all, we have to configure the **etc/hosts** since every node in the clu
 | 141.59.29.113 | i-hadoop-03.informatik.hs-ulm.de i-hadoop-03 | 
 | 141.59.29.114 | i-hadoop-04.informatik.hs-ulm.de i-hadoop-04 |
 
-<center><b>Table 4:</b> etc/hosts configuration file</center>
+<b>Table 4:</b> etc/hosts configuration file
+
 
 After that step, it is necessary to add public key authentication with SSH. The master node ( **i-hadoop-01** )should login to its worker nodes without using a password. We can achieve this goal by generating a private / public key pair and distribute the public key to the 3 worker nodes by using **ssh-copy-id** command. Also for using Ambari the Hadoop user need sudo execution without password. Adding an additional line to **visudo** configuration file should solve that issue.
 
 At next, all nodes need to have Java installed. Since Ubuntu 18.04 doesn&#39;t come up with a default Java JDK we install Oracle JDK 1.8 manually on each node. After that it is time to download the Ambari repository file ([http://publicrepo-1.hortonworks.com/ambari/ubuntu16/2.x/updates/2.7.1.0/ambari.list](http://publicrepo-1.hortonworks.com/ambari/ubuntu16/2.x/updates/2.7.1.0/ambari.list)) to a directory on our Hadoop master host. The Ambari v. 2.7.1.0 is used for installation. With the command **apt-get install ambari server** the server will be installed on i-hadoop-01. Afterwards, we can start the server. Now we can go to the Ambari surface via following link: [http://i-hadoop-01.informatik.hs-ulm.de:8080](http://i-hadoop-01.informatik.hs-ulm.de:8080). The default login credentials are **admin admin**. After successful login, the real installation process begins.
 
 <img src="./imgs/ambari_installer.png" align="center" width=500></img>
-<center><b>Figure 4:</b> Ambari Wizard Installer</center>
+<b>Figure 4:</b> Ambari Wizard Installer
 
 
 Next, we click through the installation routine until the point appears where the cluster nodes are defined. At this point the fact that we are using Ubuntu 18.04 will cause some troubles. If we adding the hosts Ambari is trying to check some dependencies and is running also some check routines. It will fail to add the worker nodes to the cluster since OS is not supported (termination condition). The solution to this problem would be a downgrade of the OS but we don&#39;t have the privileges to do this. So I manually changed the **/etc/issue** , **etc/lsb-release** and **etc/os-release** file to Ubuntu 16.04 version. Of course, a backup of the original ones has been created as well. After this workaround, the check condition will not fail because Ambari consider our OS as Ubuntu 16.04. Obviously, that&#39;s a dangerous operation, so we change it back to original state after installation has been completed.
@@ -181,7 +187,8 @@ The data node from the master node was not running correctly. It could be starte
 Following screenshot shows a (successful) completed Ambari and HDP installation on our VMs.
 
 <img src="./imgs/ambari_surface.png" align="center" width=850></img>
-<center><b>Figure 5:</b> Ambari Surface, Host metrics on master node</center>
+<b>Figure 5:</b> Ambari Surface, Host metrics on master node
+
 
 Ambari has been set up and most Hadoop services are running (see Figure 4). Ambari shows lot of statistics that might be helpful for cluster management. We can control each service and either turn it off or set it into a maintenance mode. The ladder one encapsulates the service without influencing other services (high availability). Overall, Ambari is a powerful Hadoop cluster management tool that has lot of control options and supervising tools but also lacks in removing services and usability (e.g. no Ubuntu 18.04 support, only Python 2.7.x support…). The fact, that there is no official uninstaller from Hortonworks makes HDP with Ambari a risky installation. On the other hand, it is completely open source and has a strong community. Furthermore, HDP 3.0.1 comes up with a bunch of useful services and well documentation so that we will likely stay on HDP.
 
