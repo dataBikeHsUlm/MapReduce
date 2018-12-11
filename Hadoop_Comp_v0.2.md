@@ -1,12 +1,12 @@
 
 #### Overview ####
 
-- [Hadoop Distributions Overview](#1. Hadoop Distributions Overview)
-- [Comparison Criteria](#2.-Definition-of-criteria)
-- [Weighted evaluation matrix](#3.-Weighted-evaluation-matrix)
-- [Performance comparison](#4.-Performance-Comparison-with-micro-benchmarks)
-- [Hadoop installation](#5.-Installation-of-sample-Hadoop-distribution-on-4-VM's)
-- [MapReduce Job](#6.-Implement-a-sample-MapReduce-job)
+- [Hadoop Distributions Overview](#Hadoop-Distributions-Overview)
+- [Comparison Criteria](#Definition-of-criteria)
+- [Weighted evaluation matrix](#Weighted-evaluation-matrix)
+- [Performance comparison](#Performance-Comparison-with-micro-benchmarks)
+- [Hadoop installation](#Installation-of-sample-Hadoop-distribution-on-4-VM's)
+- [MapReduce Job](#Implement-a-sample-MapReduce-job)
 - [Summary](#Abstract)
 - [Bibliography](#Sources)
 
@@ -18,7 +18,7 @@
 This paper shows a general conducted comparison of Hadoop distributions which are dominating the Big Data market. Since it is necessary for our data science project to compute in a parallel and efficient fashion, such a comparison helps us to identify the right distribution. Firstly, an overview of the identified distributions with its features and pricing tiers will be shown. Afterwards I will declare some important criteria for our project based on an extensive research of internet blogs and manufacturer websites. Then a weighting of those criteria will be done. These ones will then be used to evaluate the different Hadoop distributions. The resulting evaluation matrix shows that HortonWorks might be the best distribution for our data science problem. However, a detailed look at the performance criterion shows us that MapR is the most performant in overall. For this performance comparison, evaluation results of various MapReduce jobs found on the Internet are used. Hence, in a pure performance comparison MapR would win over HortonWorks, but in an overall comparison HortonWorks convinces more since their distribution is completely open source and also their community is probably the most active one. To round off the evaluation, a test implementation of HortonWorks is carried out on the 4 virtual machines procured for this purpose where some simple MapReduce jobs are carried out.
 
 
-# 1. Hadoop Distributions Overview
+# Hadoop Distributions Overview
 
 For the first part of the evaluation, a search for widespread Hadoop distributions was conducted [1-5]. As the table below shows, 7 noteworthy distributions were found.
 
@@ -45,7 +45,7 @@ In addition to the distributions shown in Table 1, there are many other Hadoop d
 
 As we can see from figure 1 the three mentioned Hadoop distributions are building a cluster and Cloudera even overlaps with MapR slightly. That means, they are providing similar products and enjoy a similar market position. From the Forrester Wave (figure 1) we can derive that MapR seems to have the best offering. However, since we want to use one of them for our analytics project we have to dig a step deeper and make a decision based on well-defined criteria.
 
-# 2. Definition of criteria
+# Definition of criteria
 
 Hadoop distributions are rated using selected criteria, with scores ranging from 1 (very poor) to 5 (very good). Based on the research carried out, the following 20 clear criteria can be determined:
 
@@ -75,7 +75,7 @@ Hadoop distributions are rated using selected criteria, with scores ranging from
 
 The weight scale ranges from 1 (trivial) to 4 (very important), with the focus on our Santander Bicycle project. This means that cloud support, for example, is a crucial criterion in many use cases, but has only little importance for our project which leads to a trivial weight. A percentage weighting is not applied because 20 criteria would result in a fine-granular distribution (which is not good to read at all). Therefore, absolute values are used for the comparison table in the next section.
 
-# 3. Weighted evaluation matrix
+# Weighted evaluation matrix
 
 | **Criteria** | **Weight** | **KO** | **MapR** | **Hortonworks** | **Cloudera CDH** |
 | --- | --- | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ MapR comes off worst with the criterion &quot;Support of secondary services&quot
 
 An interesting aspect of the comparison is the performance criterion where MapR has the most points. Since this criterion is a KO-criterion that means it is a very important component for our project, it makes sense to examine the performance comparison between the distributions in a more detail fashion.
 
-# 4. Performance Comparison with micro benchmarks
+# Performance Comparison with micro benchmarks
 
 For a performance comparison it is good to know how fast they are compute when running in a concurrent mode. For this task MapReduce Jobs like WordCount or DFSIO Read/Write might be helpful. Following figures are extracted from a sophisticated evaluation work by Altoros [19].
 
@@ -141,7 +141,7 @@ In overall, Hortonworks HDP wins the competition for the moment, because they ha
 
 Beside from the comparison, I would generally recommend to use rather Spark than Hadoop since Spark is around 100 times faster due to in-memory processing. Also Spark provides the most important libraries (ML, Streaming …) for data science and works well on top of Hadoop (thanks YARN). It can even be installed in a standalone manner, even though it doesn&#39;t benefit from distributive multimode computing.
 
-# 5. Installation of sample Hadoop distribution on 4 VM&#39;s
+# Installation of sample Hadoop distribution on 4 VM&#39;s
 
 Hortonworks offers a configurator on their website that can be used to check products, operating systems, databases, browsers, JDKs and supported processors. It is noticeable that Ubuntu is only supported up to 16.04 LTS. However, our VMs are already v.18.4 LTS. This means Hortonworks does not official support our installed OS [20]. Also Cloudera CDH 5.15 [21] and the newest MapR 6.1 distribution [22] only support Ubuntu 16.04 LTS (Xenial). Anyway, it is still a try worth to set up Hortonworks Hadoop Data Platform (HDP) Cluster on our virtual machines since the vendors are not explicitly warning Ubuntu 18.04 is not supported. So it may work. For the installation of HDP 3.0.1 the Ambari Wizard [23] will be used.
 
@@ -185,7 +185,7 @@ Following screenshot shows a (successful) completed Ambari and HDP installation 
 
 Ambari has been set up and most Hadoop services are running (see Figure 4). Ambari shows lot of statistics that might be helpful for cluster management. We can control each service and either turn it off or set it into a maintenance mode. The ladder one encapsulates the service without influencing other services (high availability). Overall, Ambari is a powerful Hadoop cluster management tool that has lot of control options and supervising tools but also lacks in removing services and usability (e.g. no Ubuntu 18.04 support, only Python 2.7.x support…). The fact, that there is no official uninstaller from Hortonworks makes HDP with Ambari a risky installation. On the other hand, it is completely open source and has a strong community. Furthermore, HDP 3.0.1 comes up with a bunch of useful services and well documentation so that we will likely stay on HDP.
 
-# 6. Implement a sample MapReduce job
+# Implement a sample MapReduce job
 
 
 
