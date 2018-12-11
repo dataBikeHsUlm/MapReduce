@@ -119,7 +119,7 @@ Table 3 clearly shows that there are almost no significant differences between t
 
 Another representation of the evaluated Hadoop distributions, a spider chart may be appropriate as it makes it easier to read and to identify outliers or similarities even quicker as with a raw table.
 
-<img src="./imgs/spider_chart.png" align="center" width=450></img>
+<img src="./imgs/spider_chart.PNG" align="center" width=450></img>
 <center><b>Figure 2:</b> Spider chart of compared Hadoop distributions</center>
 
 The KO criteria from table 3 are all satisfied by the selected Hadoop vendors. One criterion that stands out is the license model, which was rated with 1 point for MapR and 2 points for Cloudera. This is due to the fact that the price models of both vendors are not transparent. So Cloudera offers a free community edition but to use the Cloudera Manager (the real strength of Cloudera) you have to pay again. Only Hortonworks offers a complete Open Source package with except the Hortonworks business support is fee required. However, Hortonworks has a very active community as well.
@@ -132,7 +132,7 @@ An interesting aspect of the comparison is the performance criterion where MapR 
 
 For a performance comparison it is good to know how fast they are compute when running in a concurrent mode. For this task MapReduce Jobs like WordCount or DFSIO Read/Write might be helpful. Following figures are extracted from a sophisticated evaluation work by Altoros [19].
 
-<img src="./imgs/benchmarks_mr.png" align="center" width=500></img>
+<img src="./imgs/benchmarks_mr.PNG" align="center" width=500></img>
 <center><b>Figure 3:</b> Micro benchmarks on DFSIO and WordCount MapReduce Jobs</center>
 
 For the performance comparison of figure 3 Hadoop cluster each one with 16 nodes have been established in order to measure computation time. Interesting point is that all 3 Hadoop distributions almost achieve the same overall speed on the famous WordCount MapReduce job. But if we look at the performance per node then there is a small difference between them. This could be due to a certain error rate in the execution of the job. If the same test were repeated, the results would be negligibly different. The DFSIO Read/Write (figure 3) job shows MapR is definitely faster than Hortonworks and Cloudera. The reason for this might be the fact that MapR uses its own HDFS which is according to the vendor seven times faster than the original one from Apache. This is the reason why it gets 5 points in the evaluation matrix (see table 2) and the other ones only 4 points. Hortonworks and Cloudera seems to have the same performance on the DFSIO job because both using Apache HDFS.
