@@ -5,8 +5,8 @@
 - [Comparison Criteria](#2.-Definition-of-criteria)
 - [Weighted evaluation matrix](#3.-Weighted-evaluation-matrix)
 - [Performance comparison](#4.-Performance-Comparison-with-micro-benchmarks)
-- [Hadoop installation]("#5.-Installation-of-sample-Hadoop-distribution-on-4-VM's")
-- [MapReduce Job]("6.-Implement-a-sample-MapReduce-job")
+- [Hadoop installation](#5.-Installation-of-sample-Hadoop-distribution-on-4-VM's)
+- [MapReduce Job](#6.-Implement-a-sample-MapReduce-job)
 - [Summary](#Abstract)
 - [Bibliography](#Sources)
 
