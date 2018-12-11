@@ -6,7 +6,7 @@
 - [Comparison Criteria](#Definition-of-criteria)
 - [Weighted evaluation matrix](#Weighted-evaluation-matrix)
 - [Performance comparison](#Performance-Comparison-with-micro-benchmarks)
-- [Hadoop installation](#Installation-of-sample-Hadoop-distribution-on-4-VM&#39;s)
+- [Hadoop installation](#Installation-of-sample-Hadoop-distribution-on-4-VM)
 - [MapReduce Job](#Implement-a-sample-MapReduce-job)
 - [Bibliography](#Sources)
 
@@ -141,7 +141,7 @@ In overall, Hortonworks HDP wins the competition for the moment, because they ha
 
 Beside from the comparison, I would generally recommend to use rather Spark than Hadoop since Spark is around 100 times faster due to in-memory processing. Also Spark provides the most important libraries (ML, Streaming …) for data science and works well on top of Hadoop (thanks YARN). It can even be installed in a standalone manner, even though it doesn&#39;t benefit from distributive multimode computing.
 
-# Installation of sample Hadoop distribution on 4 VM&#39;s
+# Installation of sample Hadoop distribution on 4 VM
 
 Hortonworks offers a configurator on their website that can be used to check products, operating systems, databases, browsers, JDKs and supported processors. It is noticeable that Ubuntu is only supported up to 16.04 LTS. However, our VMs are already v.18.4 LTS. This means Hortonworks does not official support our installed OS [20]. Also Cloudera CDH 5.15 [21] and the newest MapR 6.1 distribution [22] only support Ubuntu 16.04 LTS (Xenial). Anyway, it is still a try worth to set up Hortonworks Hadoop Data Platform (HDP) Cluster on our virtual machines since the vendors are not explicitly warning Ubuntu 18.04 is not supported. So it may work. For the installation of HDP 3.0.1 the Ambari Wizard [23] will be used.
 
