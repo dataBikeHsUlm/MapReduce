@@ -10,7 +10,7 @@
 - [MapReduce Job](#Implement-a-sample-MapReduce-job)
 - [Bibliography](#Sources)
 
-**Entry Point:** [i-hadoop-01.informatik.hs-ulm.de:8080](i-hadoop-01.informatik.hs-ulm.de:8080)
+**Entry Point:** i-hadoop-01.informatik.hs-ulm.de:8080
 
  # **Evaluation of Hadoop Distributions v0.2**
 **for Data Science project**
