@@ -1,7 +1,7 @@
 
 #### Overview ####
 
-- [Hadoop Distributions Overview](#1.-Hadoop-Distributions-Overview)
+- [Hadoop Distributions Overview](#1. Hadoop Distributions Overview)
 - [Comparison Criteria](#2.-Definition-of-criteria)
 - [Weighted evaluation matrix](#3.-Weighted-evaluation-matrix)
 - [Performance comparison](#4.-Performance-Comparison-with-micro-benchmarks)
