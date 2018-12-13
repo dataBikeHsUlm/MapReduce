@@ -42,7 +42,9 @@ Nevertheless, Intel, ERM/Pivotal and IBM partnered with Hortonworks or Cloudera 
 
 In addition to the distributions shown in Table 1, there are many other Hadoop distributions such as Altiscale from SAP or Elastic MapReduce from Amazon. Both run only in a cloud environment. The Forrester Wave shows also the three global players Cloudera, HortonWorks and MapR (see figure 1). Since cloud solutions do not play a role for this use case, Microsoft, Google or Amazon will not be considered.
 
- <img src="./imgs/forrester.png" align="center" width=500></img>
+<img src="./imgs/forrester.png" align="center" width=500></img>
+
+<br>
 <b>Figure 1:</b> Forrester Wave of Hadoop Distributions [5]
 
 
