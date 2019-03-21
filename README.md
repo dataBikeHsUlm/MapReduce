@@ -5,7 +5,7 @@ Repository for biking data analytics in London. Focus on clusterbased computatio
 - [Hadoop Evaluation](../master/Hadoop_Distributions_Comparison.pdf)
 - [Data Preparation](../master/Data_Munging/)
 - [Data Profiling](../master/Data_Profiling/)
+- [Cycling Routes](../master/Data_Profiling/routes_frequency.html)
 
 ### Under Construction
-- Plotting cycling routes based on Graphhopper
 
