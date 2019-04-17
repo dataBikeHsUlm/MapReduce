@@ -603,7 +603,7 @@ August,Summer,Saturday,False,partly-cloudy-day,partly-cloudy-day,0.74,0.66,1.97,
 August,Summer,Sunday,False,partly-cloudy-day,partly-cloudy-day,0.83,0.74,3.23,1.97,64.03,69.925,77,90
 August,Summer,Monday,True,partly-cloudy-day,partly-cloudy-day,0.73,0.83,1.4,3.23,63.785,64.03,90,384
 August,Summer,Tuesday,False,clear-day,partly-cloudy-day,0.67,0.73,1.22,1.4,66.405,63.785,384,381
-September,Autumn,Wednesday,False,partly-cloudy-day,,0.74,,1.24,,70.485,,381,375
+September,Autumn,Wednesday,False,partly-cloudy-day,partly-cloudy-day,0.74,0.86,1.24,1.23,70.485,70.345,381,375
 September,Autumn,Thursday,False,partly-cloudy-day,partly-cloudy-day,0.71,0.74,2.68,1.24,66.28,70.485,375,367
 September,Autumn,Friday,False,partly-cloudy-day,partly-cloudy-day,0.79,0.71,4.78,2.68,67.97,66.28,367,61
 September,Autumn,Saturday,False,partly-cloudy-day,partly-cloudy-day,0.88,0.79,3.54,4.78,57.92,67.97,61,106
@@ -792,7 +792,7 @@ March,Spring,Saturday,False,partly-cloudy-day,partly-cloudy-day,0.83,0.85,1.49,2
 March,Spring,Sunday,False,clear-day,partly-cloudy-day,0.85,0.83,0.87,1.49,48.415000000000006,54.925,56,406
 March,Spring,Monday,False,clear-day,clear-day,0.72,0.85,2.2,0.87,52.345,48.415000000000006,406,379
 March,Spring,Tuesday,False,partly-cloudy-day,clear-day,0.84,0.72,3.12,2.2,52.32,52.345,379,328
-March,Spring,Wednesday,False,rain,,0.82,,4.21,,44.975,,328,359
+March,Spring,Wednesday,False,rain,partly-cloudy-day,0.82,0.68,4.21,5.04,44.975,45.77,328,359
 March,Spring,Thursday,False,partly-cloudy-day,rain,0.81,0.82,5.48,4.21,46.445,44.975,359,315
 March,Spring,Friday,False,partly-cloudy-day,partly-cloudy-day,0.81,0.81,5.27,5.48,46.065,46.445,315,71
 March,Spring,Saturday,False,clear-day,partly-cloudy-day,0.58,0.81,5.47,5.27,48.48,46.065,71,76
@@ -1380,7 +1380,7 @@ October,Autumn,Saturday,False,clear-day,partly-cloudy-day,0.77,0.75,9.72,9.58,35
 October,Autumn,Sunday,False,partly-cloudy-day,clear-day,0.81,0.77,9.67,9.72,37.29,35.77,46,360
 October,Autumn,Monday,False,clear-day,partly-cloudy-day,0.78,0.81,7.89,9.67,22.06,37.29,360,339
 October,Autumn,Tuesday,False,partly-cloudy-day,clear-day,0.81,0.78,8.78,7.89,15.935,22.06,339,283
-November,Autumn,Wednesday,False,partly-cloudy-day,,0.86,,12.62,,47.39,,283,373
+November,Autumn,Wednesday,False,partly-cloudy-day,fog,0.86,0.88,12.62,7.99,47.39,56.325,283,373
 November,Autumn,Thursday,False,partly-cloudy-day,partly-cloudy-day,0.78,0.86,8.85,12.62,48.73,47.39,373,284
 November,Autumn,Friday,False,wind,partly-cloudy-day,0.85,0.78,10.51,8.85,51.015,48.73,284,42
 November,Autumn,Saturday,False,partly-cloudy-day,wind,0.9,0.85,8.41,10.51,51.42,51.015,42,60
@@ -1511,5 +1511,5 @@ March,Spring,Thursday,False,wind,wind,0.71,0.64,16.31,19.48,50.685,45.13,238,258
 March,Spring,Friday,False,wind,wind,0.8,0.71,19.56,16.31,54.26000000000001,50.685,258,28
 March,Spring,Saturday,False,wind,wind,0.8,0.8,20.5,19.56,42.86,54.26000000000001,28,41
 March,Spring,Sunday,True,partly-cloudy-day,wind,0.74,0.8,13.56,20.5,38.345,42.86,41,327
-March,Spring,Monday,True,clear-day,partly-cloudy-day,0.73,0.74,7.48,13.56,43.78,38.345,327,
-March,Spring,Tuesday,False,partly-cloudy-day,clear-day,0.82,0.73,5.76,7.48,50.34,43.78,323,33
+March,Spring,Monday,True,clear-day,partly-cloudy-day,0.73,0.74,7.53,13.56,43.78,38.345,327,323
+March,Spring,Tuesday,False,partly-cloudy-day,clear-day,0.82,0.73,5.76,7.53,50.34,43.78,323,33
