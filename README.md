@@ -1,7 +1,7 @@
 ## Overview
 Repository for biking data analytics in London. Focus on clusterbased computation (Hadoop) as well as geocoding. The analyzed data are public available and provided by the Transport for London (TfL) service of the local government. The cycling data can be retrieved here [Bicycles](https://cycling.data.tfl.gov.uk/).
 
-Note: the .json notebooks can only be displayed in [Zeppelin](https://zeppelin.apache.org/) as they usually include `sparkcontext` environment.
+Note: the .json notebooks can only be displayed in [Zeppelin](https://zeppelin.apache.org/) and they usually include `sparkcontext` environment.
 
 ### Navigation
 - [Hadoop Evaluation](../master/Hadoop_Distributions_Comparison.pdf)
@@ -16,7 +16,7 @@ Build up the frame - feature engineering & research of TfL rental usage data.
 
 ### Structure of DataFrame
 
-For data preparation and munging the linked notebooks have been used. After running them, a csv file with following schema has been created:
+For data preparation and munging the linked notebooks have been used. After running them, a csv file with following schema will be created:
 
 Attributes             | N records     | Datatype       | Comments
 -----------------------|:-------------:|----------------|---------
@@ -48,7 +48,8 @@ Apparent Temperature <br>(Avg)| 470190        | non-null int64 |
 
 The majority of data is based on the usage-stats/ folder from the TFL site. Additional to get the coordinates and other information (e.g. capacity) the [livefeed](https://cycling.data.tfl.gov.uk/) has been used.
 
+### Bike stations
 
+There are 786 unique rental stations across different boroughs in inner London. The following map shows the stations divided into the individual districts. 
 
-
-
+![station map](../master/imgs/bike_map.png)
