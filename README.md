@@ -5,7 +5,7 @@ Note: the .json notebooks can only be displayed in [Zeppelin](https://zeppelin.a
 
 ### Navigation
 - [Hadoop Evaluation](../master/Hadoop_Distributions_Comparison.pdf)
-- [Data Preparation](../master/Data_Munging/)
+- [Data Preparation](../master/Data_Preparation/)
 - [Data Profiling](../master/Data_Profiling/)
 - [Cycling Routes](../master/Data_Profiling/routes_frequency.html)
 
