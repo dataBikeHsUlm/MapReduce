@@ -1,0 +1,3 @@
+[submodule "Data_Profiling/NominatimLibrary"]
+	path = Data_Profiling/NominatimLibrary
+	url = git@github.com:dataBikeHsUlm/NominatimLibrary.git
