@@ -12,6 +12,6 @@ FIRST=$(echo $ALL_CSV | tr " " "\n" | head -1)
 
 head -1 $FIRST > $DEST_FILE
 
-for i in $(find . -name $ALL_CSV);
+for i in $ALL_CSV;
     do tail +2 $i >> $DEST_FILE;
 done
