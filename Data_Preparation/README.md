@@ -5,7 +5,12 @@ The script `DFGeneration.json` generates dynamically a dataframe of cycling usag
 
 Note: the .json notebooks can only be displayed in [Zeppelin](https://zeppelin.apache.org/) and they usually include `sparkcontext` environment.
 
+- The file `cycleusage_cleansed.csv` (containing all stations) can be downloaded here: [Drive](https://drive.google.com/file/d/1z9FYVz0Y4XCRnNdYqi42TLkcz_RsX09a/view?usp=sharing)
+
+- The file `kings_cross_cleansed.csv` (cleansed rental station Kings Cross for daily aggregation) can be downloaded here: [Drive](https://drive.google.com/open?id=16AaSCwmMv2xnqm5ixplhWGrl_McZrKoZ)
+
+
 ### Navigation
-- [Go Back](../)
+- [Go Back](https://github.com/dataBikeHsUlm/MapReduce)
 
 
